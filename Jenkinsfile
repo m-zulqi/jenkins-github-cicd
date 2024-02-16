@@ -33,7 +33,7 @@ pipeline {
         expression { params.ENVIRONMENT == "PRODUCTION" }
       }
       steps {
-        input message: "Deploy to environment...", ok: "Deploy,
+        input message: "Deploy to environment...", ok: "Deploy
         echo "Deploying to ${params.ENVIRONMENT}."
       }
     }
